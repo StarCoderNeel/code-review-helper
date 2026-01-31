@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-review-helper"
+version = "0.1.0"
+description = "An AI-powered code review tool that provides real-time feedback on code quality, security, and best practices. The tool integrates with version control systems to analyze code changes."
+dependencies = ['pygit2', 'black', 'bandit', 'flake8', 'mypy']
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "-v --tb=short"
