@@ -49,3 +49,6 @@ MIT License
 
 ### Update 3
 Development iteration 3
+
+### Update 6
+Development iteration 6
